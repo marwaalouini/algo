@@ -1,0 +1,24 @@
+ALGORITHM  sentence
+
+VAR
+    s:STRING 
+    nb_voyelle,nb_car,num_word: INTEGER:=0
+    i:INTEGER
+
+BEGIN
+write("the sentence") 
+read (s)
+WHILE (s[i]<>".") DO
+    nb_car=nb_car+1
+    if (s[i]=["a","e","u","i","y","o"]) then 
+    nb_voyelle=nb_voyelle+1
+    end
+IF(s[i]=" ")then
+num_word=num_word+1
+END
+nb_car:=nb_car+1
+END_WHILE
+    write("the number of caracter")
+    write(" the number of word")
+    write(" the number of voyelle")
+END
